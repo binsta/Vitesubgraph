@@ -5,7 +5,7 @@
 
 This subgraph focuses on tracking sett vault tokens transfers of Vite. This supgraph powers the [Vite API](https://docs.vite.org/)
 
-# [SubGraph](https://api.thegraph.com/subgraphs/name/binsta/vitesubgraph)
+# [SubGraph](https://thegraph.com/hosted-service/subgraph/binsta/vitesubgraph)
 
 ## Initial setup
 
@@ -29,3 +29,5 @@ Deploy
 ```
 yarn deploy:<network>
 ```
+Check the example 
+[example](https://github.com/binsta/Vitesubgraph/tree/main/example)
