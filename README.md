@@ -29,5 +29,4 @@ Deploy
 ```
 yarn deploy:<network>
 ```
-Check the example 
-[example](https://github.com/binsta/Vitesubgraph/tree/main/example)
+Check the [example](https://github.com/binsta/Vitesubgraph/tree/main/example)
