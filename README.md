@@ -1,0 +1,31 @@
+# vite-subgraph
+
+![License](https://img.shields.io/badge/license-MIT-green)
+[![GitHub issues](https://img.shields.io/github/issues/binsta/vite-subgraph.svg?style=flat-rounded)](https://github.com/binsta/vite-subgraph)
+
+This subgraph focuses on tracking sett vault tokens transfers of Vite. This supgraph powers the [Vite API](https://docs.vite.org/)
+
+# [SubGraph](https://api.thegraph.com/subgraphs/name/binsta/vitesubgraph)
+
+## Initial setup
+
+Generate graphql entities and contracts:
+
+```bash
+yarn prepare:mainnet
+yarn codegen
+```
+
+## Deploying a Subgraph
+
+Prepare deployment:
+
+```
+yarn prepare:<network>
+```
+
+Deploy
+
+```
+yarn deploy:<network>
+```

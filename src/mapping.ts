@@ -15,38 +15,38 @@ import {
 } from "../generated/schema"
 
 export function handleApproval(event: ApprovalEvent): void {
-  let entity = new Approval(
+  let approval = new Approval(
     event.transaction.hash.toHex() + "-" + event.logIndex.toString()
   )
-  entity.owner = event.params.owner
-  entity.spender = event.params.spender
-  entity.value = event.params.value
-  entity.save()
+  approval.owner = event.params.owner
+  approval.spender = event.params.spender
+  approval.value = event.params.value
+  approval.save()
 }
 
 export function handlePaused(event: PausedEvent): void {
-  let entity = new Paused(
+  let paused = new Paused(
     event.transaction.hash.toHex() + "-" + event.logIndex.toString()
   )
-  entity.account = event.params.account
-  entity.save()
+  paused.account = event.params.account
+  paused.save()
 }
 
 
 export function handleTransfer(event: TransferEvent): void {
-  let entity = new Transfer(
+  let transfer = new Transfer(
     event.transaction.hash.toHex() + "-" + event.logIndex.toString()
   )
-  entity.from = event.params.from
-  entity.to = event.params.to
-  entity.value = event.params.value
-  entity.save()
+  transfer.from = event.params.from
+  transfer.to = event.params.to
+  transfer.value = event.params.value
+  transfer.save()
 }
 
 export function handleUnpaused(event: UnpausedEvent): void {
-  let entity = new Unpaused(
+  let unpaused = new Unpaused(
     event.transaction.hash.toHex() + "-" + event.logIndex.toString()
   )
-  entity.account = event.params.account
-  entity.save()
+  unpaused.account = event.params.account
+  unpaused.save()
 }
